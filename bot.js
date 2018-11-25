@@ -269,5 +269,5 @@ client.on("message", message => {
     
    }
    }); 
-   
-	client.login("NDUzMjMyNjE5MzU0NzE4MjA4.DfeHeA.c_oln5ahBC4GJGKEMEq-dpobXOE");
+  
+	client.login("TOKEN_BOT");
