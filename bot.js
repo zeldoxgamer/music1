@@ -270,4 +270,4 @@ client.on("message", message => {
    }
    }); 
   
-	client.login("TOKEN_BOT");
+	client.login("BOT_TOKEN");
