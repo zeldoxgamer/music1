@@ -68,7 +68,7 @@ client.on('message', async msg => {
                 const video2 = await youtube.getVideoByID(video.id); 
                 await handleVideo(video2, msg, voiceChannel, true); 
             }
-			return msg.channel.send(`**${playlist.title}**, `تم اضافة الاغنية الى لائحة التشغيل`);
+			return msg.channel.send(`**${playlist.title}**`).(`تم اضافة الاغنية الى لائحة التشغيل`);
 		} else {
 
 			try {
