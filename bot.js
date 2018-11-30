@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`3play-Simo`,"http://twitch.tv/S-F")
+client.user.setGame(`1play || +1help`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -146,14 +146,14 @@ ${videos.map(video2 => `[**${++index} **] \`${video2.title}\``).join('\n')}`)
 ${serverQueue.songs.map(song => `**${++index} -** ${song.title}`).join('\n')}
 **الان يتم تشغيل** ${serverQueue.songs[0].title}`)
         return msg.channel.sendEmbed(embedqu);
-    } else if (command === `stop`) {
+    } else if (command === `1stop`) {
         if (serverQueue && serverQueue.playing) {
             serverQueue.playing = false;
             serverQueue.connection.dispatcher.pause();
             return msg.channel.send('تم إيقاف الموسيقى مؤقتا!');
         }
         return msg.channel.send('لا يوجد شيء حالي ف العمل.');
-    } else if (command === "resume") {
+    } else if (command === "1resume") {
         if (serverQueue && !serverQueue.playing) {
             serverQueue.playing = true;
             serverQueue.connection.dispatcher.resume();
@@ -231,7 +231,7 @@ function play(guild, song) {
  
  
 client.on("message", message => {
-    if (message.content === `${prefix}help`) {
+    if (message.content === `${prefix}1help`) {
   const embed = new Discord.RichEmbed()
       .setColor("#000000")
       .setDescription(`
