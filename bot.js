@@ -251,7 +251,7 @@ client.on("message", message => {
  
  
  
-const devs = ['الايدي تبعك' , '' , '' , ''];
+const devs = ['411613098923786241' , '' , '' , ''];
 const adminprefix = "-";
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
